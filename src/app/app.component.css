@@ -1,14 +1,4 @@
-.header{
-  background: #000000;
-  color: #ffffff;
-  }
-
-  .main{
-    flex-grow: 2;
-    overflow: auto;
-  }
-
-  .footer{
-    background: #000000;
-    color: #ffffff;
-  }
+.main {
+  flex-grow: 2;
+  overflow: auto;
+}
