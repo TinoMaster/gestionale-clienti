@@ -1,0 +1,62 @@
+.title_mainPage {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #1abc9c, #26877f);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.links_container_mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.links_container_mainPage .link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.links_container_mainPage .link-button a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.links_container_mainPage .link-button img {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.links_container_mainPage .link-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.links_container_mainPage .link-button span {
+  font-size: 16px;
+  font-weight: bold;
+  height: 20%;
+}
