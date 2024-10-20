@@ -22,35 +22,6 @@ body {
   height: 100vh;
 }
 
-.app {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.max-container {
-  width: 100%;
-  padding: 10px 20px;
-}
-
-.compact-container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  background: linear-gradient(to right, #1abc9c, #26877f);
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-}
-
 table {
   width: 100%;
   margin: 20px auto;
@@ -70,8 +41,7 @@ td {
 }
 
 th {
-  background-color: #26877f;
-  color: white;
+  @apply bg-dark_light text-white;
 }
 
 tr:hover {
@@ -85,103 +55,6 @@ tr:nth-child(even):hover {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-a {
-  color: #2ec27e;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.sidebar {
-  height: 100%;
-  width: 12%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #e1e1e1;
-  background: transparent;
-}
-
-.sidebar nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar .menu-itemsidebar {
-  padding: 25px 45px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #26877f;
-  font-weight: bold;
-  display: block;
-  border-left: 4px solid transparent;
-  position: relative;
-}
-
-.sidebar .menu-itemsidebar:hover {
-  color: #1abc9c;
-}
-
-.sidebar .active {
-  font-weight: bold;
-  border-left: 8px solid #1abc9c;
-  color: #1abc9c;
-  background-color: #bceff9;
-}
-
-.sidebar .menu-itemsidebar i {
-  margin-right: 10px;
-}
-
-.generalContainer {
-  display: flex;
-  flex-direction: column;
-  width: 88%;
-  overflow: auto;
-  position: relative;
-}
-
-main {
-  flex-grow: 2;
-  width: 80%;
-  margin: auto;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  color: #5e5c64;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-}
-
-.social-icons a {
-  margin: 10px;
-  color: #5e5c64;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  color: #007bff;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-weight: bold;
-  color: #555;
 }
 
 input[type="text"],
@@ -214,3 +87,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2ec27e;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
