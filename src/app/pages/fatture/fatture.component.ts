@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './fatture.component.html',
-  styleUrl: './fatture.component.css'
+  styleUrl: './fatture.component.css',
 })
-export default class FattureComponent {
-
-}
+export class FattureComponent {}

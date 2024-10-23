@@ -12,11 +12,17 @@ export const routes: Routes = [
       },
       {
         path: 'clienti',
-        loadComponent: () => import('./pages/clienti/clienti.component'),
+        loadChildren: () =>
+          import('./pages/clienti/clienti.routes').then(
+            (m) => m.CLIENTI_ROUTES
+          ),
       },
       {
         path: 'fatture',
-        loadComponent: () => import('./pages/fatture/fatture.component'),
+        loadChildren: () =>
+          import('./pages/fatture/fatture.routes').then(
+            (m) => m.FATTURE_ROUTES
+          ),
       },
       {
         path: '',
