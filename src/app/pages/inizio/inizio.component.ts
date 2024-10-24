@@ -10,4 +10,6 @@ import { SimpleWidgetsComponent } from '../../common/components/simple-widgets/s
   templateUrl: './inizio.component.html',
   styleUrl: './inizio.component.css',
 })
-export default class InizioComponent {}
+export default class InizioComponent {
+
+}
