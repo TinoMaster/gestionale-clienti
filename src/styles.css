@@ -26,7 +26,6 @@ table {
   width: 100%;
   margin: 20px auto;
   border-collapse: collapse;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -36,7 +35,6 @@ th,
 td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
   cursor: pointer;
 }
 
@@ -88,5 +86,3 @@ input[type="submit"]:hover {
   background-color: #2ec27e;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
