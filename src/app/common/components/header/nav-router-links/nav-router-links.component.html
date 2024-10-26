@@ -4,13 +4,13 @@
   >
     @for(segment of segments; track segment) {
     <li
-      class="flex items-center first-line:text-blue-gray-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-light-blue-500"
+      class="flex gap-1 items-center first-line:text-blue-gray-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-light-blue-500"
     >
       <a routerLink="{{ segment }}">
         <span
           [class]="
             $index === segments.length - 1
-              ? 'text-gray-600 font-bold text-lg'
+              ? 'text-gray-600 font-bold text-xl'
               : 'block antialiased font-sans text-sm leading-normal text-blue-900 font-normal opacity-50 transition-all hover:text-blue-500 hover:opacity-100'
           "
         >
@@ -19,7 +19,8 @@
       </a>
       <span
         class="text-gray-500 text-sm antialiased font-sans font-normal leading-normal pointer-events-none select-none"
-        >{{ segments[$index + 1] ? " / " : "" }}</span
+      >
+        {{ segments[$index + 1] && $index !== 0 ? " / " : "" }}</span
       >
     </li>
     }

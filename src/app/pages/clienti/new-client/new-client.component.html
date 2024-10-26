@@ -1,0 +1,51 @@
+<div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+  <h4 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+    Creazione Cliente
+  </h4>
+  <form action="clienti?action=save" method="POST" class="space-y-4">
+    <div>
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Introdurre il nome del cliente"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="cognome">Cognome:</label>
+      <input
+        type="text"
+        id="cognome"
+        name="cognome"
+        placeholder="Introdurre il cognome del cliente"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Introdurre l'email del cliente"
+        required
+      />
+    </div>
+
+    <div>
+      <input
+        type="submit"
+        value="Creare Cliente"
+        class="btn btn-primary w-full"
+      />
+    </div>
+  </form>
+
+  <div class="mt-4 text-center">
+    <a routerLink="/clienti" class="text-blue-600 hover:text-blue-700">Tornare Indietro</a>
+  </div>
+</div>

@@ -61,28 +61,28 @@ input[type="date"],
 input[type="email"],
 textarea,
 select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 96%;
+  @apply mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:border-blue-500;
+}
+
+label{
+  @apply block text-sm font-medium text-gray-700;
 }
 
 textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+.btn {
+  @apply transition-all duration-300 ease-in-out;
+  background-color: #dfdada;
+  color: #444444;
   padding: 10px 15px;
   font-size: 14px;
-  background: linear-gradient(to right, #1abc9c, #34495e);
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: #2ec27e;
+.btn-primary {
+  @apply bg-gradient-to-tr from-primary to-primary_light shadow-md shadow-blue-500/20 text-white hover:shadow-lg hover:shadow-blue-500/40;
 }
-
